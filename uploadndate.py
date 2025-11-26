@@ -54,7 +54,7 @@ def git_operations():
         subprocess.run(['git', 'config', 'user.name', name], check=True)
         
         # 添加所有更改
-        subprocess.run(['git', 'add', '.'], check=True)
+        subprocess.run(['git', 'add', 'README.md'], check=True)
         
         # 提交更改
         commit_message = f"Automated update: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}"
